@@ -7,7 +7,6 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f7fa;}
-
 /* NAV */
 nav{
   position:sticky;top:0;
@@ -184,9 +183,40 @@ footer span{color:#facc15;font-weight:bold;}
   .badge-strip{gap:14px;}
   .why-card{width:150px;padding:20px 16px;}
 }
-</style>
+  <style>
+#welcomeScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  animation: fadeOut 3s forwards;
+  animation-delay: 3s;
+}
+
+#welcomeScreen h1 {
+  font-size: 40px;
+  color: black;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 </head>
 <body>
+  <div id="welcomeScreen">
+  <h1>Welcome to Maharashtra 🇮🇳</h1>
+  <p>Apki website me swagat hai</p>
+  </div>
 
 <!-- NAV -->
 <nav>
